@@ -1,0 +1,239 @@
+@media (min-width: 200px) {
+    header {
+        >section {
+            @include flexBoxColumn;
+            height: 52vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            row-gap: 5vh;
+
+            a {
+                background-color: lightseagreen;
+                color: whitesmoke;
+                padding: 3% 5% 3% 5%;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+
+        h2 {
+            font-size: 40px;
+            font-weight: 400;
+        }
+
+    }
+
+    nav {
+        >ul {
+            display: none;
+        }
+
+        @include flexBoxRow;
+        background-color: whitesmoke;
+        padding: 3%;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+    }
+
+    details {
+        position: absolute;
+        width: 95%;
+        text-align: right;
+
+        >ul {
+            list-style-type: none;
+            background-color: whitesmoke;
+            position: absolute;
+            width: 100%;
+            @include flexBoxColumn;
+            align-items: center;
+            row-gap: 3vh;
+
+        }
+
+        li {
+            @include flexBoxRow;
+            width: 99%;
+        }
+
+        a {
+            text-align: center;
+            padding: 1vh;
+            height: 100%;
+            width: 100%;
+            text-transform: uppercase;
+            // border: 1px solid dimgray;
+        }
+    }
+
+    main {
+        @include flexBoxColumn;
+        row-gap: 5vh;
+        padding-top: 15%;
+        padding-bottom: 15%;
+
+        section {
+            >article {
+                @include flexBoxColumn;
+                row-gap: 2vh;
+                text-align: center;
+
+                h3 {
+                    font-size: 28px;
+                    text-transform: capitalize;
+                }
+
+
+
+            }
+        }
+    }
+
+    .bars {
+        @include flexBoxRow;
+        width: 100%;
+        column-gap: 1vh;
+        justify-content: center;
+
+        >h5,
+        >h6 {
+            width: 15%;
+            height: 0.5vh;
+        }
+
+        >h5 {
+            background-color: lightseagreen;
+        }
+
+        >h6 {
+            background-color: dimgray;
+        }
+    }
+
+    .services {
+        @include flexBoxColumn;
+        row-gap: 5vh;
+
+        >section {
+            @include flexBoxColumn;
+            row-gap: 5vh;
+            align-items: center
+        }
+
+        aside {
+            @include flexBoxColumn;
+            row-gap: 5vh;
+            width: 80%;
+            text-align: center;
+
+            >article {
+                @include flexBoxColumn;
+                row-gap: 2vh;
+            }
+
+            i {
+                font-size: 48px;
+            }
+
+            h4 {
+                text-transform: uppercase;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .testimonials {
+        @include bgPic("/img/toy-wood.jpg", 100%, 45vh);
+
+        >article {
+            @include flexBoxColumn;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(25, 25, 25, 0.8);
+            height: 100%;
+            color: whitesmoke;
+        }
+
+        p {
+            width: 90%;
+        }
+
+        i,
+        span {
+            color: lightseagreen;
+        }
+
+        i {
+            font-size: 48px;
+        }
+    }
+
+    .contact {
+        @include flexBoxColumn;
+        row-gap: 5vh;
+        align-items: center;
+
+    }
+
+    form {
+        @include flexBoxColumn;
+        row-gap: 3vh;
+        width: 80%;
+        align-items: center;
+
+        >article {
+            @include flexBoxRow;
+            align-items: space-between;
+            column-gap: 3vh;
+            width: 85%;
+
+            >aside {
+                width: 50%;
+            }
+        }
+
+        aside {
+            @include flexBoxColumn;
+            row-gap: 1vh;
+            // column-gap: 3vh;
+            width: 100%;
+        }
+
+        p {
+            text-align: center;
+        }
+
+    }
+
+    label {
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    input {
+        padding: 7%;
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+        height: 10vh;
+    }
+
+    ::placeholder {
+        font-size: 18px;
+    }
+
+
+    [type="submit"] {
+        width: 30%;
+        color: whitesmoke;
+        background-color: lightseagreen;
+        padding: 20%;
+        border: 1px solid red;
+    }
+}

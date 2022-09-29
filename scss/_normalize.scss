@@ -1,0 +1,13 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: $fontFamily;
+}
+
+header {
+    @include bgPic("/img/keyboard.jpg", 100%, 60vh)
+}
+
+a {
+    text-decoration: none;
+}
